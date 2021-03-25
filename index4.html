@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let width = Number(prompt("Enter the width"));
+        let height = Number(prompt("Enter the height"));
+        let kytu = prompt("Bạn muốn nhập ký tự gì");
+        let input = 0;
+        let count = 0;
+        
+        while(count < height){
+            input = input + "";
+            count++;
+        }
+        for(let i = 1;i <= width;i++){
+            for(let j = 1;j <= height;j++){
+                if((i == width) || (i == 1) || (j == 1) || (j == height)){
+                    document.write(kytu);
+                }else{
+                    document.write(input);
+                }
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
